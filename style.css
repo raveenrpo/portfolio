@@ -24,7 +24,13 @@ html{
 }
 body{
     background: var(--bg-color);
+    background-color: #081725;
+    z-index: 0;
     color: var(--text-color);
+}
+a.headinglink{
+    font-size:large !important;
+
 }
 .header
 {
@@ -49,13 +55,13 @@ section{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding: 0 9%;
+    padding: 9% 9%;
     background-color:#081725;
     background-size: cover;
     background-position: center;
 }
 .home-content{
-    max-width: 70rem;
+    max-width: 70rem !important;
 }
 .home-content h1{
     font-size: 5rem;
@@ -131,13 +137,13 @@ section{
 .btn-box .btn:hover::before{
 width: 100%;
 }
-.home-sci{
-    position: absolute;
-    bottom: 2rem;
+ .home-sci{
+    position:absolute;
+    top: 7rem;
     width: 170px;
     display: flex;
     justify-content: space-between;
-}
+} 
 .home-sci a{
 position: relative;
 display: inline-flex;
@@ -159,8 +165,8 @@ transition: .5s;
 .home-sci a::before{
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10rem;
+    left: 100rem;
     width: 0;
     height: 100%;
     background: var(--main-color);
@@ -171,6 +177,19 @@ transition: .5s;
 width: 100px;
 }
 
+
+/* .home-img{
+    position: relative;
+    bottom: 10rem;
+    left: auto;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    z-index:0;
+} */
 
 .about{
     display: flex;
@@ -184,6 +203,7 @@ width: 100px;
 .heading{
     font-size: 5rem;
     margin-bottom: 3rem;
+    padding-top: 4rem;
     text-align: center;
 }
 span{
@@ -243,6 +263,7 @@ text-align: center;
 .project{
     display: flex;
     justify-content: center;
+    gap: 1rem;
     align-items: center;
     flex-direction: column;
     min-height: auto;

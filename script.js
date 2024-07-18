@@ -16,5 +16,5 @@ emailjs.send("service_hxqbhmc","template_04m67fu",parms)
         console.log(res);
         alert("your message send successfully");
     }
-).catch(err=>console.log(err));
+).catch(err=>console.log(err))
 }
